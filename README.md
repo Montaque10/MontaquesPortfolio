@@ -1,12 +1,66 @@
-# React + Vite
+# Montaque Paulse's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and Vite, showcasing my work and skills as a developer.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit the live portfolio at: [https://montaque10.github.io/MontaquesPortfolio](https://montaque10.github.io/MontaquesPortfolio)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive design that works on all devices
+- Smooth scrolling navigation
+- Interactive UI components
+- Portfolio showcase
+- Contact form
+- Social media integration
+
+## Technologies Used
+
+- React
+- Vite
+- Framer Motion
+- GSAP
+- React Anchor Link Smooth Scroll
+- CSS3
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Montaque10/MontaquesPortfolio.git
+```
+
+2. Install dependencies:
+```bash
+cd MontaquesPortfolio
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+5. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+## Project Structure
+
+- `src/` - Source files
+  - `Components/` - React components
+  - `assets/` - Images and other static assets
+  - `App.jsx` - Main application component
+  - `main.jsx` - Application entry point
+
+## Contact
+
+- GitHub: [@Montaque10](https://github.com/Montaque10)
+- LinkedIn: [Montaque Paulse](https://www.linkedin.com/in/montaque-paulse-932a92a3/)
