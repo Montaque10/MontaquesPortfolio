@@ -1,0 +1,192 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title h1 {
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0px 30px;
+    background: linear-gradient(270deg, #3561A3 80%, #91AAD0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.work-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    display: flex;
+    background: #1a1a1a;
+    border: 1px solid #32323c;
+    padding: 5px;
+}
+
+.work-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.work-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: rgba(26, 26, 26, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.work-card:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-info {
+    color: white;
+    text-align: center;
+    max-width: 90%;
+}
+
+.work-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #91AAD0;
+}
+
+.work-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.work-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.work-tech span {
+    background: rgba(53, 97, 163, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #91AAD0;
+}
+
+.work-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #3561A3;
+    transition: 0.3s;
+}
+
+.work-links a:hover {
+    background: #91AAD0;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid #91AAD0;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+    color: #91AAD0;
+    align-items: center;
+}
+
+.mywork-showmore:hover {
+    gap: 30px;
+    background: rgba(145, 170, 208, 0.1);
+}
+
+.arrow-icon {
+    transition: 0.3s;
+}
+
+.mywork-showmore:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+
+@media (max-width: 1200px) {
+    .mywork {
+        margin: 80px 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .mywork-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .work-card {
+        aspect-ratio: 16/9;
+        padding: 3px;
+    }
+    
+    .work-overlay {
+        top: 3px;
+        left: 3px;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+    }
+}
+
+@media (max-width: 600px) {
+    .mywork {
+        margin: 80px 20px;
+        gap: 40px;
+    }
+    
+    .mywork-title h1 {
+        font-size: 50px;
+    }
+    
+    .mywork-showmore {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+}

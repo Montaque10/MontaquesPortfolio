@@ -1,0 +1,155 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logo-text {
+  color: #fff;
+}
+
+.logo-dot {
+  color: #3561A3;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.anchor-link {
+  color: #91AAD0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li.active .anchor-link,
+.anchor-link:hover {
+  color: #fff;
+}
+
+.nav-menu li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(264deg, #3561A3 -5.36%, #91AAD0 102.06%);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.social-icon {
+  color: #91AAD0;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.nav-connect {
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #3561A3 -5.36%, #91AAD0 102.06%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(53, 97, 163, 0.3);
+}
+
+.nav-connect .anchor-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+  .navBar {
+    padding: 1.5rem 2rem;
+  }
+  
+  .nav-menu {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .nav-menu {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-right {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .social-icons {
+    order: 2;
+  }
+  
+  .nav-connect {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+  
+  .anchor-link {
+    font-size: 1rem;
+  }
+  
+  .nav-connect {
+    padding: 0.6rem 1rem;
+  }
+}
